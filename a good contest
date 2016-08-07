@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,b,a,flag=0;
+    char c[10];
+    cin>>n;
+    while(n--)
+    {
+        cin>>c;
+        cin>>b>>a;
+        if(b>=2400)
+        {
+            if(a>b)
+            {
+            cout<<"YES";
+            flag=1;
+            break;
+            }
+
+
+
+
+    }
+    }
+
+if(flag==0)
+    cout<<"NO";
+    return 0;
+}
