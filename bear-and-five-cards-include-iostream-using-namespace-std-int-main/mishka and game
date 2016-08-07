@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+
+    int m,c,n,i;
+    int p=0,q=0;
+    cin>>n;
+
+    for(i=0;i<n;i++)
+    {
+        cin>>m>>c;
+        if(m>c)
+        p++;
+        else if(c>m)
+        q++;
+        else if(m==c)
+        {
+            p++;
+            q++;
+        }
+
+
+    }
+    if(p>q)
+    cout<<"Mishka";
+    else if(q>p)
+    cout<<"Chris";
+    else if(p==q)
+    cout<<"Friendship is magic!^^";
+    return 0;
+
+}
