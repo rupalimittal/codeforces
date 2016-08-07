@@ -1,0 +1,43 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    long long int n,i,y,p=1000000000;
+    cin>>n;
+    long long int a[n];
+    int flag=0;
+    char c[n];
+
+    for(i=0;i<n;i++)
+    {
+        cin>>c[i];
+    }
+    for(i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+
+
+    for(i=0;i<n;i++)
+    {
+        if(c[i]=='R'&&c[i+1]=='L')
+        {
+            y=(a[i+1]-a[i])/2;
+
+             if(y<p)
+        p=y;
+        flag=1;
+
+
+
+        }
+
+
+    }
+    if(flag==0)
+    cout<<"-1";
+    else
+    cout<<p;
+    return 0;
+
+}
